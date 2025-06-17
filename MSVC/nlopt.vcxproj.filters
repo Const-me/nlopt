@@ -317,4 +317,7 @@
   <ItemGroup>
     <ResourceCompile Include="nlopt.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.md" />
+  </ItemGroup>
 </Project>
