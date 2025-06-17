@@ -312,5 +312,9 @@
     <ClInclude Include="..\src\util\ParallelReduce.h">
       <Filter>util</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nlopt.rc" />
   </ItemGroup>
 </Project>

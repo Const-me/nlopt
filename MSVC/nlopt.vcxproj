@@ -99,6 +99,10 @@
     <ClInclude Include="..\src\util\redblack.h" />
     <ClInclude Include="..\src\util\soboldata.h" />
     <ClInclude Include="nlopt_config.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nlopt.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
