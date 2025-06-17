@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="algs">
+      <UniqueIdentifier>{b12c38c7-211e-4917-9b9b-edfe8281ceec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\ags">
+      <UniqueIdentifier>{d88a5dca-7f1a-4029-86f0-3448f1cfe4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{0e1665c6-9597-43e8-83b9-5b0ed2aed7f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api">
+      <UniqueIdentifier>{458454d0-7a4c-46e2-a518-3b12119b06d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\auglag">
+      <UniqueIdentifier>{d939d81e-b934-40e3-a948-fb5b987f0e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\bobyqa">
+      <UniqueIdentifier>{6ec3b879-7af1-4440-9db9-27be0d4b3404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\cdirect">
+      <UniqueIdentifier>{c057cc04-6b99-473a-8893-843154f2b111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\praxis">
+      <UniqueIdentifier>{d91de88a-6179-4d28-ae32-05af4b4f661f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\direct">
+      <UniqueIdentifier>{162e4fdf-5409-4f70-a385-50687e79f394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\stogo">
+      <UniqueIdentifier>{a23f2ba7-651b-4383-86d7-5e7ddc4ac926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\luksan">
+      <UniqueIdentifier>{82c69f80-772f-4a59-abe6-89d40fedd9fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\mlsl">
+      <UniqueIdentifier>{4693c966-44ef-4305-ac52-f1f33c84b895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\crs">
+      <UniqueIdentifier>{25f97eeb-7f07-4194-a24d-72762075e45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\mma">
+      <UniqueIdentifier>{5626940d-c75a-4769-8d78-0166f8423e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\cobyla">
+      <UniqueIdentifier>{d10c44de-82ba-4564-8d7b-53e19cdebef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\newuoa">
+      <UniqueIdentifier>{b0522625-39fa-48a8-8244-3927af86d863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\neldermead">
+      <UniqueIdentifier>{67ba763e-fedb-4541-9a4c-20233c274496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\isres">
+      <UniqueIdentifier>{73186181-683e-4071-b889-5be84b91abca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\esch">
+      <UniqueIdentifier>{7d73254f-c1a8-4462-a281-cda3a4c81dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algs\slsqp">
+      <UniqueIdentifier>{765b24b7-66f9-48df-83d6-50bdde2c466e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\algs\ags\ags.cc">
+      <Filter>algs\ags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\ags\evolvent.cc">
+      <Filter>algs\ags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\ags\local_optimizer.cc">
+      <Filter>algs\ags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\ags\solver.cc">
+      <Filter>algs\ags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\auglag\auglag.c">
+      <Filter>algs\auglag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\mt19937ar.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\nlopt-getopt.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\qsort_r.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\redblack.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\rescale.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\sobolseq.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\stop.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\timer.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\api\optimize.c">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\api\options.c">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\api\general.c">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\bobyqa\bobyqa.c">
+      <Filter>algs\bobyqa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\cdirect\cdirect.c">
+      <Filter>algs\cdirect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\cdirect\hybrid.c">
+      <Filter>algs\cdirect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\praxis\praxis.c">
+      <Filter>algs\praxis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\direct\DIRect.c">
+      <Filter>algs\direct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\direct\direct_wrap.c">
+      <Filter>algs\direct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\direct\DIRserial.c">
+      <Filter>algs\direct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\direct\DIRsubrout.c">
+      <Filter>algs\direct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\stogo\stogo.cc">
+      <Filter>algs\stogo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\stogo\linalg.cc">
+      <Filter>algs\stogo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\stogo\tools.cc">
+      <Filter>algs\stogo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\stogo\global.cc">
+      <Filter>algs\stogo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\stogo\local.cc">
+      <Filter>algs\stogo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\luksan\mssubs.c">
+      <Filter>algs\luksan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\luksan\plip.c">
+      <Filter>algs\luksan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\luksan\plis.c">
+      <Filter>algs\luksan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\luksan\pnet.c">
+      <Filter>algs\luksan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\luksan\pssubs.c">
+      <Filter>algs\luksan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\crs\crs.c">
+      <Filter>algs\crs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\mlsl\mlsl.c">
+      <Filter>algs\mlsl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\mma\mma.c">
+      <Filter>algs\mma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\mma\ccsa_quadratic.c">
+      <Filter>algs\mma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\cobyla\cobyla.c">
+      <Filter>algs\cobyla</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\newuoa\newuoa.c">
+      <Filter>algs\newuoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\neldermead\nldrmd.c">
+      <Filter>algs\neldermead</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\neldermead\sbplx.c">
+      <Filter>algs\neldermead</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\isres\isres.c">
+      <Filter>algs\isres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\esch\esch.c">
+      <Filter>algs\esch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\slsqp\slsqp.c">
+      <Filter>algs\slsqp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\api\deprecated.c">
+      <Filter>api</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\algs\ags\ags.h">
+      <Filter>algs\ags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\ags\data_types.hpp">
+      <Filter>algs\ags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\ags\evolvent.hpp">
+      <Filter>algs\ags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\ags\local_optimizer.hpp">
+      <Filter>algs\ags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\ags\solver.hpp">
+      <Filter>algs\ags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\auglag\auglag.h">
+      <Filter>algs\auglag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\nlopt-getopt.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\nlopt-util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\redblack.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\soboldata.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\api\nlopt.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\api\nlopt-internal.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\bobyqa\bobyqa.h">
+      <Filter>algs\bobyqa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\cdirect\cdirect.h">
+      <Filter>algs\cdirect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\praxis\praxis.h">
+      <Filter>algs\praxis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\direct\direct.h">
+      <Filter>algs\direct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\direct\direct-internal.h">
+      <Filter>algs\direct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\stogo\stogo.h">
+      <Filter>algs\stogo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\stogo\stogo_config.h">
+      <Filter>algs\stogo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\stogo\linalg.h">
+      <Filter>algs\stogo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\stogo\tools.h">
+      <Filter>algs\stogo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\stogo\global.h">
+      <Filter>algs\stogo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\stogo\local.h">
+      <Filter>algs\stogo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\luksan\luksan.h">
+      <Filter>algs\luksan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\crs\crs.h">
+      <Filter>algs\crs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\mlsl\mlsl.h">
+      <Filter>algs\mlsl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\mma\mma.h">
+      <Filter>algs\mma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\cobyla\cobyla.h">
+      <Filter>algs\cobyla</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\newuoa\newuoa.h">
+      <Filter>algs\newuoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\neldermead\neldermead.h">
+      <Filter>algs\neldermead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\isres\isres.h">
+      <Filter>algs\isres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\esch\esch.h">
+      <Filter>algs\esch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\algs\slsqp\slsqp.h">
+      <Filter>algs\slsqp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

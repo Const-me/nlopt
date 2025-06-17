@@ -24,3 +24,8 @@ build/
 
 # VSCode
 .vscode/
+# MSVC specific
+MSVC/.vs/
+MSVC/nlopt/x64/
+MSVC/x64/
+MSVC/nlopt.vcxproj.user

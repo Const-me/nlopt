@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\algs\ags\ags.cc" />
+    <ClCompile Include="..\src\algs\ags\evolvent.cc" />
+    <ClCompile Include="..\src\algs\ags\local_optimizer.cc" />
+    <ClCompile Include="..\src\algs\ags\solver.cc" />
+    <ClCompile Include="..\src\algs\auglag\auglag.c" />
+    <ClCompile Include="..\src\algs\bobyqa\bobyqa.c" />
+    <ClCompile Include="..\src\algs\cdirect\cdirect.c" />
+    <ClCompile Include="..\src\algs\cdirect\hybrid.c" />
+    <ClCompile Include="..\src\algs\cobyla\cobyla.c" />
+    <ClCompile Include="..\src\algs\crs\crs.c" />
+    <ClCompile Include="..\src\algs\direct\DIRect.c" />
+    <ClCompile Include="..\src\algs\direct\direct_wrap.c" />
+    <ClCompile Include="..\src\algs\direct\DIRserial.c" />
+    <ClCompile Include="..\src\algs\direct\DIRsubrout.c" />
+    <ClCompile Include="..\src\algs\esch\esch.c" />
+    <ClCompile Include="..\src\algs\isres\isres.c" />
+    <ClCompile Include="..\src\algs\luksan\mssubs.c" />
+    <ClCompile Include="..\src\algs\luksan\plip.c" />
+    <ClCompile Include="..\src\algs\luksan\plis.c" />
+    <ClCompile Include="..\src\algs\luksan\pnet.c" />
+    <ClCompile Include="..\src\algs\luksan\pssubs.c" />
+    <ClCompile Include="..\src\algs\mlsl\mlsl.c" />
+    <ClCompile Include="..\src\algs\mma\ccsa_quadratic.c" />
+    <ClCompile Include="..\src\algs\mma\mma.c" />
+    <ClCompile Include="..\src\algs\neldermead\nldrmd.c" />
+    <ClCompile Include="..\src\algs\neldermead\sbplx.c" />
+    <ClCompile Include="..\src\algs\newuoa\newuoa.c" />
+    <ClCompile Include="..\src\algs\praxis\praxis.c" />
+    <ClCompile Include="..\src\algs\slsqp\slsqp.c" />
+    <ClCompile Include="..\src\algs\stogo\global.cc" />
+    <ClCompile Include="..\src\algs\stogo\linalg.cc" />
+    <ClCompile Include="..\src\algs\stogo\local.cc" />
+    <ClCompile Include="..\src\algs\stogo\stogo.cc" />
+    <ClCompile Include="..\src\algs\stogo\tools.cc" />
+    <ClCompile Include="..\src\api\deprecated.c" />
+    <ClCompile Include="..\src\api\general.c" />
+    <ClCompile Include="..\src\api\optimize.c" />
+    <ClCompile Include="..\src\api\options.c" />
+    <ClCompile Include="..\src\util\mt19937ar.c" />
+    <ClCompile Include="..\src\util\nlopt-getopt.c" />
+    <ClCompile Include="..\src\util\qsort_r.c" />
+    <ClCompile Include="..\src\util\redblack.c" />
+    <ClCompile Include="..\src\util\rescale.c" />
+    <ClCompile Include="..\src\util\sobolseq.c" />
+    <ClCompile Include="..\src\util\stop.c" />
+    <ClCompile Include="..\src\util\timer.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\algs\ags\ags.h" />
+    <ClInclude Include="..\src\algs\ags\data_types.hpp" />
+    <ClInclude Include="..\src\algs\ags\evolvent.hpp" />
+    <ClInclude Include="..\src\algs\ags\local_optimizer.hpp" />
+    <ClInclude Include="..\src\algs\ags\solver.hpp" />
+    <ClInclude Include="..\src\algs\auglag\auglag.h" />
+    <ClInclude Include="..\src\algs\bobyqa\bobyqa.h" />
+    <ClInclude Include="..\src\algs\cdirect\cdirect.h" />
+    <ClInclude Include="..\src\algs\cobyla\cobyla.h" />
+    <ClInclude Include="..\src\algs\crs\crs.h" />
+    <ClInclude Include="..\src\algs\direct\direct-internal.h" />
+    <ClInclude Include="..\src\algs\direct\direct.h" />
+    <ClInclude Include="..\src\algs\esch\esch.h" />
+    <ClInclude Include="..\src\algs\isres\isres.h" />
+    <ClInclude Include="..\src\algs\luksan\luksan.h" />
+    <ClInclude Include="..\src\algs\mlsl\mlsl.h" />
+    <ClInclude Include="..\src\algs\mma\mma.h" />
+    <ClInclude Include="..\src\algs\neldermead\neldermead.h" />
+    <ClInclude Include="..\src\algs\newuoa\newuoa.h" />
+    <ClInclude Include="..\src\algs\praxis\praxis.h" />
+    <ClInclude Include="..\src\algs\slsqp\slsqp.h" />
+    <ClInclude Include="..\src\algs\stogo\global.h" />
+    <ClInclude Include="..\src\algs\stogo\linalg.h" />
+    <ClInclude Include="..\src\algs\stogo\local.h" />
+    <ClInclude Include="..\src\algs\stogo\stogo.h" />
+    <ClInclude Include="..\src\algs\stogo\stogo_config.h" />
+    <ClInclude Include="..\src\algs\stogo\tools.h" />
+    <ClInclude Include="..\src\api\nlopt-internal.h" />
+    <ClInclude Include="..\src\api\nlopt.h" />
+    <ClInclude Include="..\src\util\nlopt-getopt.h" />
+    <ClInclude Include="..\src\util\nlopt-util.h" />
+    <ClInclude Include="..\src\util\redblack.h" />
+    <ClInclude Include="..\src\util\soboldata.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0a3a252d-9d77-4bc7-8357-c2a5720dc7d3}</ProjectGuid>
+    <RootNamespace>nlopt</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\src\api\;$(ProjectDir)..\src\util\;$(ProjectDir)..\src\algs\ags\;$(ProjectDir)..\src\algs\auglag\;$(ProjectDir)..\src\algs\bobyqa\;$(ProjectDir)..\src\algs\cdirect\;$(ProjectDir)..\src\algs\cobyla\;$(ProjectDir)..\src\algs\cquad\;$(ProjectDir)..\src\algs\crs\;$(ProjectDir)..\src\algs\direct\;$(ProjectDir)..\src\algs\esch\;$(ProjectDir)..\src\algs\isres\;$(ProjectDir)..\src\algs\luksan\;$(ProjectDir)..\src\algs\mlsl\;$(ProjectDir)..\src\algs\mma\;$(ProjectDir)..\src\algs\neldermead\;$(ProjectDir)..\src\algs\newuoa\;$(ProjectDir)..\src\algs\praxis\;$(ProjectDir)..\src\algs\slsqp\;$(ProjectDir)..\src\algs\stogo\;$(ProjectDir)..\src\algs\subplex\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\src\api\;$(ProjectDir)..\src\util\;$(ProjectDir)..\src\algs\ags\;$(ProjectDir)..\src\algs\auglag\;$(ProjectDir)..\src\algs\bobyqa\;$(ProjectDir)..\src\algs\cdirect\;$(ProjectDir)..\src\algs\cobyla\;$(ProjectDir)..\src\algs\cquad\;$(ProjectDir)..\src\algs\crs\;$(ProjectDir)..\src\algs\direct\;$(ProjectDir)..\src\algs\esch\;$(ProjectDir)..\src\algs\isres\;$(ProjectDir)..\src\algs\luksan\;$(ProjectDir)..\src\algs\mlsl\;$(ProjectDir)..\src\algs\mma\;$(ProjectDir)..\src\algs\neldermead\;$(ProjectDir)..\src\algs\newuoa\;$(ProjectDir)..\src\algs\praxis\;$(ProjectDir)..\src\algs\slsqp\;$(ProjectDir)..\src\algs\stogo\;$(ProjectDir)..\src\algs\subplex\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;NLOPT_EXPORTS;_WINDOWS;_USRDLL;NLOPT_LUKSAN;NLOPT_DLL;NLOPT_DLL_EXPORT;nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;NLOPT_EXPORTS;_WINDOWS;_USRDLL;NLOPT_LUKSAN;NLOPT_DLL;NLOPT_DLL_EXPORT;nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
