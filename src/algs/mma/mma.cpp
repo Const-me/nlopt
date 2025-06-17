@@ -53,8 +53,8 @@ namespace
 
 unsigned mma_verbose = 0; /* > 0 for verbose output */
 
-#define MIN(a,b) ((a) < (b) ? (a) : (b))
-#define MAX(a,b) ((a) > (b) ? (a) : (b))
+#define MIN(a,b) std::min((a), (b))
+#define MAX(a,b) std::max((a), (b))
 
 /* magic minimum value for rho in MMA ... the 2002 paper says it should
    be a "fixed, strictly positive `small' number, e.g. 1e-5"
@@ -171,6 +171,37 @@ namespace
 		v = _mm_add_pd( v, _mm256_castpd256_pd128( v4 ) );
 		v = _mm_add_sd( v, _mm_unpackhi_pd( v, v ) );
 		return _mm_cvtsd_f64( v );
+	}
+
+	// rdi[ 0 .. length - 1 ] = -rsi[ 0 .. length - 1 ]
+	inline void negateDoubles( double* rdi, const size_t length, const double* rsi )
+	{
+		// Round the length down to a multiple of 4
+		const size_t lengthAligned = length & (ptrdiff_t)-4;
+		const double* const rsiEndAligned = rsi + lengthAligned;
+
+		// Using proper formula *rdi = ( 0.0 - *rsi ) because the output numbers are consumed by external code in this DLL.
+		// Also this function bottlenecks on memory stores not compute, the arithmetic instruction is essentially free
+		const __m256d zero = _mm256_setzero_pd();
+
+		// Handle full vectors in the loop
+		for( ; rsi < rsiEndAligned; rdi += 4 )
+		{
+			__m256d v = _mm256_loadu_pd( rsi );
+			rsi += 4;
+			v = _mm256_sub_pd( zero, v );
+			_mm256_storeu_pd( rdi, v );
+		}
+
+		// Handle the remainder
+		const size_t rem = length % 4;
+		if( 0 != rem )
+		{
+			const __m256i loadMask = remainderLoadMask( 0, rem );
+			__m256d v = _mm256_maskload_pd( rsi, loadMask );
+			v = _mm256_sub_pd( zero, v );
+			_mm256_maskstore_pd( rdi, loadMask, v );
+		}
 	}
 }
 
@@ -422,37 +453,6 @@ namespace
 			_mm256_maskstore_pd( rdi, loadMask, acc );
 		}
 	}
-
-	// rdi[ 0 .. length - 1 ] = -rsi[ 0 .. length - 1 ]
-	inline void negateDoubles( double* rdi, const size_t length, const double* rsi )
-	{
-		// Round the length down to a multiple of 4
-		const size_t lengthAligned = length & (ptrdiff_t)-4;
-		const double* const rsiEndAligned = rsi + lengthAligned;
-
-		// Using proper formula *rdi = ( 0.0 - *rsi ) because the output numbers are consumed by external code in this DLL.
-		// Also this function bottlenecks on memory stores not compute, the arithmetic instruction is essentially free
-		const __m256d zero = _mm256_setzero_pd();
-
-		// Handle full vectors in the loop
-		for( ; rsi < rsiEndAligned; rdi += 4 )
-		{
-			__m256d v = _mm256_loadu_pd( rsi );
-			rsi += 4;
-			v = _mm256_sub_pd( zero, v );
-			_mm256_storeu_pd( rdi, v );
-		}
-
-		// Handle the remainder
-		const size_t rem = length % 4;
-		if( 0 != rem )
-		{
-			const __m256i loadMask = remainderLoadMask( 0, rem );
-			__m256d v = _mm256_maskload_pd( rsi, loadMask );
-			v = _mm256_sub_pd( zero, v );
-			_mm256_maskstore_pd( rdi, loadMask, v );
-		}
-	}
 }
 
 // Add FP64 buffers produced by the threads of the reducer
@@ -515,7 +515,7 @@ static double dual_func( unsigned m32, const double* y, double* grad, void* d_ )
 
 	double* xcur = d->xcur;
 	double* gcval = d->gcval;
-	size_t i, j;
+	size_t i;
 	double val;
 
 	d->count++;
@@ -579,7 +579,7 @@ static double dual_func( unsigned m32, const double* y, double* grad, void* d_ )
 	__m256d wValVec = _mm256_setzero_pd();
 
 	// The main loop now leverages AVX to process 4 numbers per iteration
-	for( j = 0; j < n; j += 4 )
+	for( size_t j = 0; j < n; j += 4 )
 	{
 		const __m256i loadMask = remainderLoadMask( j, n );
 		const bool incompleteVector = ( j + 4 ) > n;
