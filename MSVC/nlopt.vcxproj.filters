@@ -201,6 +201,12 @@
     <ClCompile Include="..\src\api\deprecated.c">
       <Filter>api</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\algs\mma\mma.cpp">
+      <Filter>algs\mma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\ParallelReduce.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\algs\ags\ags.h">
@@ -303,5 +309,8 @@
       <Filter>algs\slsqp</Filter>
     </ClInclude>
     <ClInclude Include="nlopt_config.h" />
+    <ClInclude Include="..\src\util\ParallelReduce.h">
+      <Filter>util</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

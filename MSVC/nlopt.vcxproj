@@ -34,7 +34,11 @@
     <ClCompile Include="..\src\algs\luksan\pssubs.c" />
     <ClCompile Include="..\src\algs\mlsl\mlsl.c" />
     <ClCompile Include="..\src\algs\mma\ccsa_quadratic.c" />
-    <ClCompile Include="..\src\algs\mma\mma.c" />
+    <ClCompile Include="..\src\algs\mma\mma.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\algs\mma\mma.cpp" />
     <ClCompile Include="..\src\algs\neldermead\nldrmd.c" />
     <ClCompile Include="..\src\algs\neldermead\sbplx.c" />
     <ClCompile Include="..\src\algs\newuoa\newuoa.c" />
@@ -51,6 +55,7 @@
     <ClCompile Include="..\src\api\options.c" />
     <ClCompile Include="..\src\util\mt19937ar.c" />
     <ClCompile Include="..\src\util\nlopt-getopt.c" />
+    <ClCompile Include="..\src\util\ParallelReduce.cpp" />
     <ClCompile Include="..\src\util\qsort_r.c" />
     <ClCompile Include="..\src\util\redblack.c" />
     <ClCompile Include="..\src\util\rescale.c" />
@@ -90,6 +95,7 @@
     <ClInclude Include="..\src\api\nlopt.h" />
     <ClInclude Include="..\src\util\nlopt-getopt.h" />
     <ClInclude Include="..\src\util\nlopt-util.h" />
+    <ClInclude Include="..\src\util\ParallelReduce.h" />
     <ClInclude Include="..\src\util\redblack.h" />
     <ClInclude Include="..\src\util\soboldata.h" />
     <ClInclude Include="nlopt_config.h" />
@@ -141,6 +147,8 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -158,6 +166,8 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
