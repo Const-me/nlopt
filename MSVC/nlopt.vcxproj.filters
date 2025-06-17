@@ -302,5 +302,6 @@
     <ClInclude Include="..\src\algs\slsqp\slsqp.h">
       <Filter>algs\slsqp</Filter>
     </ClInclude>
+    <ClInclude Include="nlopt_config.h" />
   </ItemGroup>
 </Project>

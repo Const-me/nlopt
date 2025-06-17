@@ -29,7 +29,7 @@
 #define HAVE_COPYSIGN
 
 /* Define if the fpclassify() function/macro is available. */
-/* #undef HAVE_FPCLASSIFY */
+#define HAVE_FPCLASSIFY
 
 /* Define to 1 if you have the <getopt.h> header file. */
 /* #undef HAVE_GETOPT_H */
@@ -47,10 +47,10 @@
 /* #undef HAVE_GETTIMEOFDAY */
 
 /* Define if the isinf() function/macro is available. */
-/* #undef HAVE_ISINF */
+#define HAVE_ISINF
 
 /* Define if the isnan() function/macro is available. */
-/* #undef HAVE_ISNAN */
+#define HAVE_ISNAN
 
 /* Define to 1 if you have the `m' library (-lm). */
 #undef HAVE_LIBM
